@@ -18,6 +18,7 @@ namespace LINQStudio
                 select score;
 
             Console.WriteLine("Score > 80");
+
             // Execute the query.
             foreach (int i in scoreQuery)
             {

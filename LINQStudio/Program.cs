@@ -8,7 +8,8 @@ namespace LINQStudio
     {
         static void Main(string[] args)
         {
-            BasicLinqQuery.BasicQuery();
+            NestedGroupQuery.QueryNestedGroups();
+            //BasicLinqQuery.BasicQuery();
             //GroupByExamples.GroupByEx1();
         }
     }
