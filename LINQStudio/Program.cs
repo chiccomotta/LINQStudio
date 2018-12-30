@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace LINQStudio
 {
@@ -6,7 +8,8 @@ namespace LINQStudio
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BasicLinqQuery.BasicQuery();
+            //GroupByExamples.GroupByEx1();
         }
     }
 }
