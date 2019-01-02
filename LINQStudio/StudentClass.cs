@@ -111,11 +111,11 @@ namespace LINQStudio
 
         public void QueryHighScores(int exam, int score)
         {
-            var highScores = from student in students
-                where student.ExamScores[exam] > score
+            var highScores = from Student in students
+                where Student.ExamScores[exam] > score
                 select new
                 {
-                    Name = student.FirstName, Score = student.ExamScores[exam]
+                    Name = Student.FirstName, Score = Student.ExamScores[exam]
                 };
 
             foreach (var item in highScores)

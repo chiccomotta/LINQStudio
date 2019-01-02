@@ -20,7 +20,7 @@ namespace LINQStudio
             // cursor over the iteration variables to see their actual type.
             foreach (var outerGroup in queryNestedGroups)
             {
-                Console.WriteLine($"Student Level = {outerGroup.Key}");
+                Console.WriteLine($"student Level = {outerGroup.Key}");
                 foreach (var innerGroup in outerGroup)
                 {
                     Console.WriteLine($"\tNames that begin with: {innerGroup.Key}");
