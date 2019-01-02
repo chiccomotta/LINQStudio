@@ -9,9 +9,9 @@ namespace LINQStudio
         static void Main(string[] args)
         {
             School.GetHighMarks();
-            //NestedGroupQuery.QueryNestedGroups();
-            //BasicLinqQuery.BasicQuery();
-            //GroupByExamples.GroupByEx1();
+            NestedGroupQuery.QueryNestedGroups();
+            BasicLinqQuery.BasicQuery();
+            GroupByExamples.GroupByEx1();
         }
     }
 }
