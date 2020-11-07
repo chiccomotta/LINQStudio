@@ -8,11 +8,12 @@ namespace LINQStudio
     {
         static void Main(string[] args)
         {
-            SimpleGroupBy.BasicGroupBy();            
+            SimpleGroupBy.BasicGroupBy();
             School.GetHighMarks();
             NestedGroupQuery.QueryNestedGroups();
             BasicLinqQuery.BasicQuery();
             GroupByExamples.GroupByEx1();
+            LeftJoinExample.LeftOuterJoinExample();
         }
     }
 }

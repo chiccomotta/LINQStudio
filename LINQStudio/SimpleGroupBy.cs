@@ -9,7 +9,7 @@ namespace LINQStudio
     {
         public static void BasicGroupBy()
         {
-            string[] files = Directory.GetFiles(@"C:\tmp");
+            string[] files = Directory.GetFiles(@"C:\MP3");
 
             // Group By
             IEnumerable<IGrouping<string, string>> query = 
