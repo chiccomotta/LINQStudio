@@ -14,6 +14,18 @@ namespace LINQStudio
             BasicLinqQuery.BasicQuery();
             GroupByExamples.GroupByEx1();
             LeftJoinExample.LeftOuterJoinExample();
+
+            var media = new MediaParameter()
+            {
+                Fase = "CD.MEDIA",
+                FlowType = "SS",
+                AutostradaCodice = 31139
+            };
+
+            var builder = new KeyValuePairBuilder();
+            var result = builder.BuildKeyValuePair(media);
+
+            Console.WriteLine("OK");
         }
     }
 }
