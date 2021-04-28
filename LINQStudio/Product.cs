@@ -39,9 +39,11 @@ namespace LINQStudio
             var pb = new Product() {Code = "B", Name = "Pr. B"};
             var pc = new Product() {Code = "A", Name = "Pr. C con codice A"};
             var pd = new Product() {Code = "D", Name = "Pr. D"};
+            var pa2 = new Product() {Code = "A", Name = "Pr. A2"};
 
-            var left = new List<Product> {pa, pb};
-            var right = new List<Product> {pc, pd};
+
+            var left = new List<Product> {pb, pa2};
+            var right = new List<Product> {pc, pd, pa};
 
             // Intersect è una left join perchè prende l'item della lista left e non quella di right
             var result = left.Intersect(right, Product.CodeComparer);
