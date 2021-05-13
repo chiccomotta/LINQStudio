@@ -8,10 +8,12 @@ namespace LINQStudio
     {
         static void Main(string[] args)
         {
-            TestIntersect.Test();
+            FooClassTest.Test();
             
+            //TestDateClass.Start();
             return;
 
+            TestIntersect.Test();
             SimpleGroupBy.BasicGroupBy();
             School.GetHighMarks();
             NestedGroupQuery.QueryNestedGroups();
