@@ -8,8 +8,10 @@ namespace LINQStudio
     {
         static void Main(string[] args)
         {
-            FooClassTest.Test();
-            
+            var tt = Duration.Day;
+            var t = tt.From(DateTime.Now);
+
+            //FooClassTest.Test();
             //TestDateClass.Start();
             return;
 
