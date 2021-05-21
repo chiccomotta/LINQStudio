@@ -2,8 +2,6 @@
 
 namespace LINQStudio
 {
-    public enum Duration { Day, Week, Month };
-
     public static class DurationExtensions 
     {
         public static DateTime From(this Duration duration, DateTime dateTime) {
