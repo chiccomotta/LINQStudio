@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 namespace LINQStudio
@@ -8,11 +9,19 @@ namespace LINQStudio
     {
         static void Main(string[] args)
         {
-            var tt = Duration.Day;
-            var t = tt.From(DateTime.Now);
+            var timer = new Stopwatch();
+            timer.Start();
+                
+            System.Threading.Thread.Sleep(3000);
 
-            //FooClassTest.Test();
-            //TestDateClass.Start();
+            timer.Stop();
+
+            var timeTaken = timer.Elapsed;
+            Console.WriteLine($"Time elapsed: {timeTaken.TotalMilliseconds} ms");
+            Console.WriteLine($"Time elapsed: {timeTaken.TotalSeconds} sec");
+            Console.WriteLine($"Time elapsed: {Math.Round(timeTaken.TotalMilliseconds / 1000, MidpointRounding.AwayFromZero)} sec");
+
+            Console.ReadLine();
             return;
 
             TestIntersect.Test();
